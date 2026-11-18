@@ -14,7 +14,7 @@ pipeline{
                 '''
             }
         }
-        
+
         stage('Eliminar imagenes'){
             steps{
                 echo 'Eliminando imágenes anteriores'
@@ -52,10 +52,6 @@ pipeline{
 
         failure{
             echo 'Error la ejecutar el pipeline'
-        }
-
-        always{
-
         }
     }
 
